@@ -15,45 +15,75 @@
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <style>
+            th {
+                text-align: center;
+            }
+            td {
+                text-align: center;
+            }
+            img {
+                width: 25%;
+                height: 25%;
+                float: right;
+            }
+            h3 {
+                clear: both;
+            }
+            p {
+                font-size: 1.5em;
+                margin: 15px 15px;
+            }
+        </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <h1 class="text-center">About Me</h1>
-            <img alt="Picture of Greg Cedarblade" src="">
-            <div class="col-sm-8">
-                <p>Add about me stuff...</p>
+            <img class="img-rounded" alt="Picture of Greg Cedarblade" src="./images/IMG_20161029_120154.jpg">
+            <div class="blog-post">
+                <p>
+                    Hello, my name is Greg Cedarblade. I am a non-traditional student
+                    at UW-Stout. I am currently going for my bachelor degree in computer 
+                    science with a concentration in mobile applications. I have two associate
+                    of applied science degrees from CVTC, one in mobile applications and the
+                    other in software development. I currently work as an educational application
+                    developer and programmer at CVTC on a grant funded project. During the early
+                    summer to beginning fall I also work on my family hop farm. When I have some
+                    free time I enjoy being friends and family, playing D&amp;D/Pathfinder, going
+                    to code camps/MeetUps for programmers, playing a game on PC/Oculus/Xbox, and 
+                    seeing movies or watching a little tv.
+                </p>
             </div>
             <h3>Class Schedule: Spring 2018</h3>
-            <table class="table">
+            <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Time</th>
-                        <th>Monday</th>
-                        <th>Tuesday</th>
-                        <th>Wednesday</th>
-                        <th>Thursday</th>
-                        <th>Friday</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Monday</th>
+                        <th scope="col">Tuesday</th>
+                        <th scope="col">Wednesday</th>
+                        <th scope="col">Thursday</th>
+                        <th scope="col">Friday</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>8am-9am</td>
+                        <th scope="row">8am-9am</th>
                         <td>N/A</td>
                         <td>N/A</td>
-                        <td>Programming in Game Engines</td>
+                        <td rowspan="2">Programming in Game Engines</td>
                         <td>N/A</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
-                        <td>9:05am-10am</td>
+                        <th scope="row">9:05am-10am</th>
                         <td>N/A</td>
                         <td>N/A</td>
-                        <td>Programming in Game Engines</td>
                         <td>N/A</td>
                         <td>Professional Seminar</td>
                     </tr>
                     <tr>
-                        <td>10:10am-11:05am</td>
+                        <th scope="row">10:10am-11:05am</th>
                         <td>Linear Algebra</td>
                         <td>N/A</td>
                         <td>Linear Algebra</td>
@@ -61,7 +91,7 @@
                         <td>Linear Algebra</td>
                     </tr>
                     <tr>
-                        <td>11:10am-12:05pm</td>
+                        <th scope="row">11:10am-12:05pm</th>
                         <td>N/A</td>
                         <td>N/A</td>
                         <td>N/A</td>
@@ -69,7 +99,7 @@
                         <td>N/A</td>
                     </tr>
                     <tr>
-                        <td>12:20pm-1:15pm</td>
+                        <th scope="row">12:20pm-1:15pm</th>
                         <td>Adv Web &amp; Internet Programming</td>
                         <td>N/A</td>
                         <td>Adv Web &amp; Internet Programming</td>
@@ -77,15 +107,15 @@
                         <td>Adv Web &amp; Internet Programming</td>
                     </tr>
                     <tr>
-                        <td>1:20pm-2:25pm</td>
+                        <th scope="row">1:20pm-2:25pm</th>
                         <td>N/A</td>
                         <td>N/A</td>
-                        <td>Programming in Game Engines</td>
+                        <td>N/A</td>
                         <td>N/A</td>
                         <td>N/A</td>
                     </tr>
                     <tr>
-                        <td>2:30pm-3:25pm/3:55pm</td>
+                        <th scope="row">2:30pm-3:25pm/3:55pm</th>
                         <td>Calculus III</td>
                         <td>Systems Programming</td>
                         <td>Calculus III</td>
